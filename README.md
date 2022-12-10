@@ -40,7 +40,7 @@ LatitudeOfPoint2,LongitudeOfPoint2,LocationOfPoint2
 		},
 		{
 			"type": "Feature",
-			"properties": { // Read "The Properties Tag (II)" to see how you can add values to it
+			"properties": { // This is optional, read "The Properties Tag (II)" to see how you can add values to it
 				"name": "LocationOfPoint1"
 			},
 			"geometry": {
