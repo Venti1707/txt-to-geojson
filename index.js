@@ -4,7 +4,7 @@ function uniqueResults(value, index, self) {
   return self.indexOf(value) === index;
 }
 
-const generateGPX = (sortedArray) =>
+const generateGEOSJSON = (sortedArray) =>
 
 // properties I tags that you can copy and paste between lines 25 and 26; Read README.md to understand the accepted values!
 // If you choose to incorporate more then one tag, they need to be separated by commas
@@ -149,7 +149,7 @@ ${sortedArray
 \t]
 }`;
 
-const GPX = (contents) => {
+const GEOJSON = (contents) => {
   const coordsArray = contents.split("\r\n").filter(uniqueResults); // Comment out .filter(uniqueResults) if you accept duplicate values
   var sortedArray;
   sortedArray = coordsArray.map((coords) => {
@@ -157,7 +157,7 @@ const GPX = (contents) => {
     return `${lat},${lon},${loc}`;
   });
 
-  return generateGPX(sortedArray);
+  return generateGEOSJSON(sortedArray);
 };
 
-module.exports = GPX;
+module.exports = GEOJSON;

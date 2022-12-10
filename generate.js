@@ -30,7 +30,7 @@ function saveRoute() {
   const contents = fs.readFileSync(`${args["input"]}.txt`, "utf8");
   const data = index(contents);
   saveToFile(data);
-  console.log(C.greenBright("Your GPX route has been saved."));
+  console.log(C.greenBright("Your GEOJSON route has been saved."));
   console.timeEnd(C.magentaBright("Time taken"));
 }
 
