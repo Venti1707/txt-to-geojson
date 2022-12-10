@@ -40,7 +40,7 @@ LatitudeOfPoint2,LongitudeOfPoint2,LocationOfPoint2
 		},
 		{
 			"type": "Feature",
-			"properties": { // This is optional, read "The Properties Tag (II)" to see how you can add values to it
+			"properties": { // You may add optional tags to this, read "The Properties Tag (II)" to see more details
 				"name": "LocationOfPoint1"
 			},
 			"geometry": {
@@ -71,14 +71,14 @@ LatitudeOfPoint2,LongitudeOfPoint2,LocationOfPoint2
 ```
 
 # The `Properties` Tag (I)
-Under this `properties` tag, you may choose to add any of the following properties (Or add it between Lines 25 and 26 of [index.js](index.js) and separated by commas, if you choose to go for multiple properties):
+Under this `properties` tag, you may choose to add any of the following properties (Add it between Lines 25 and 26 of [index.js](index.js) and separated by commas, if you choose to go for multiple properties):
 * `stroke` for the colour of the line; This requires a `"` on both ends of the key as it is a string
     * This can be defined how you usually define a colour in CSS
 * `stroke-width` for the width of the line; This does not require `"` on both ends of the key as it is an integer
 * `stroke-opacity` for the width of the line; This does not require `"` on both ends of the key as it is an integer
 
 # The `Properties` Tag (II)
-Under this `properties` tag, you may choose to add any of the following properties (Or add it in between Lines line and line2) of [index.js] and separated by commas, if you choose to go for multiple properties):
+Under this `properties` tag, you may choose to add any of the following properties (These will affect all your coordinates, use it if you want common properties! Add it in between Lines 136 and 137) of [index.js](index.js) and separated by commas, if you choose to go for multiple properties):
 * `marker-color` for the color of the marker; This requires a `"` on both ends of the key as it is a string
     * This can be defined how you usually define a colour in CSS
 * `marker-size` for the width of the line; This requires a `"` on both ends of the key as it is a string
