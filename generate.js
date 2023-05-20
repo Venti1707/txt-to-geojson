@@ -6,7 +6,7 @@ var index = require("./index.js");
 
 const args = process.argv.slice(2).reduce((acc, arg) => {
   const [k, v] = arg.split("=");
-  acc[k] = v;
+  acc[k.toLowerCase()] = v;
   return acc;
 }, {});
 
@@ -15,10 +15,10 @@ if (!fs.existsSync(`${args["input"]}.txt`)) {
   console.timeEnd(C.magentaBright("Time taken"));
   process.exit();
 }
-if (args["output"] == undefined) {
-  console.error(C.redBright("You did not specify an output file name. Please try again."));
-  console.timeEnd(C.magentaBright("Time taken"));
-  process.exit();
+if (args["output"] === undefined) {
+  const inputFileName = args["input"].split(".")[0];
+  args["output"] = inputFileName;
+  console.warn(C.hex("#FFA500")(`You did not specify an output file name. The input file name has been used as a default.`));
 }
 
 const saveToFile = (data) => {
