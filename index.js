@@ -120,13 +120,14 @@ ${sortedArray
         process.exit();
       }
 
-// properties II tags that you can copy and paste between lines 136 and 137; Read README.md to understand the accepted values!
+// properties II tags that you can copy and paste between lines 137 and 138; Read README.md to understand the accepted values!
 // If you choose to incorporate at least one tag, they need to be separated by commas
 
 /*
 
 \t\t\t\t"marker-color": ""
 \t\t\t\t"marker-size": ""
+\t\t\t\t"marker-symbol": ""
 
 */
 
